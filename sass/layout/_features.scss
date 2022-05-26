@@ -1,0 +1,101 @@
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.features-list {
+    margin-bottom: -30px;
+    @media screen and (min-width: 768px) {
+       display: flex; 
+       flex-wrap: wrap;
+       margin-bottom: -30px;
+       margin-left: -30px;
+    }
+    
+}
+
+.features-list__items {
+    width: 100%;
+    justify-content: center;
+
+    margin-bottom: 30px;
+    
+    
+
+    @media screen and (min-width: 768px) {
+            width: calc(100% / 2 - 30px);
+            
+            margin-left: 30px;
+   
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: calc(100% / 4 - 30px);
+
+            margin-bottom: 0;
+      
+            
+            
+        }
+
+
+    &::before {
+            display: block;
+            content: '';
+            margin-bottom: 30px;
+    
+            height: 120px;
+    
+            background-color: var(--background-color);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+                &:nth-child(1)::before {
+                    background-image: url(../images/antenna\ 1.svg);
+                }
+        
+                &:nth-child(2)::before {
+                    background-image: url(../images/clock\ 1.svg);
+                }
+        
+                &:nth-child(3)::before {
+                    background-image: url(../images/diagram\ 1.svg);
+                }
+        
+                &:nth-child(4)::before {
+                    background-image: url(../images/astronaut\ 1.svg);
+                }
+
+                                
+
+                                
+}
+
+
+.features-list__title {
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+
+}
+
+.features-list__text {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
