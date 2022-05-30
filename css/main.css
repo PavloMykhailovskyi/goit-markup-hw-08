@@ -471,6 +471,10 @@ body {
   justify-content: space-between;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 @media screen and (min-width: 768px) {
   .menu-btn {
     display: none;
